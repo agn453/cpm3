@@ -1,0 +1,19 @@
+;
+; [JCE] Have the date and copyright messages in only one source file
+;	makedate.lib covers the assembly components. For the PL/M components
+;	mcd80a.asm, mcd80d.asm and mcd80f.asm also contain the date
+;	as well as in show.plm
+;
+@BDATE	MACRO
+	db	'200625'		; [AGN] 20-Jun-2025
+	ENDM
+
+@LCOPY	MACRO
+	db	'Copyright 2025, '	; [JCE]
+	db	'DRDOS, Inc.     '	; [JCE]
+	ENDM
+
+@SCOPY	MACRO
+	db	'(c) 2025 DRDOS'	; [JCE]
+	ENDM
+

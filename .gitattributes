@@ -1,0 +1,69 @@
+# Default is to keep crlf line endings
+text=auto
+
+README text eol=crlf
+README.md text eol=crlf
+LICENSE text eol=crlf
+Makefile text eol=crlf
+*.asm text eol=crlf linguist-language=Assembly
+*.ASM text eol=crlf linguist-language=Assembly
+fpal.lib binary
+plm51.lib binary
+plm80.lib binary
+system.lib binary
+*.lib text eol=crlf linguist-language=Assembly
+*.LIB text eol=crlf linguist-language=Assembly
+*.lit text eol=crlf
+*.dat text eol=crlf
+*.dcl text eol=crlf
+*.DCL text eol=crlf
+*.PAT text eol=crlf
+*.plm text eol=crlf
+*.pli text eol=crlf
+*.PLI text eol=crlf
+*.c text eol=crlf linguist-language=C
+*.com binary
+*.COM binary
+*.F text eof=crlf
+*.h text eol=crlf linguist-language=C
+*.exe binary
+*.EXE binary
+*.tar.gz binary
+*.hlp binary
+*.hex text eol=crlf
+*.html text
+*.inc text eol=crlf
+*.prl binary
+*.PRN text eol=crlf
+*.rel binary
+*.txt text eol=crlf
+*.TXT text eol=crlf
+*.lbr binary
+*.LBR binary
+*.spr binary
+*.utl binary
+*.zip binary
+*.rsx binary
+*.pdf binary
+asm80 binary
+asxref binary
+conv86 binary
+hexobj binary
+ixref binary
+lib binary
+link binary
+locate binary
+objhex binary
+plm80 binary
+submit binary
+*.ov0 binary
+*.ov1 binary
+*.ov2 binary
+*.ov3 binary
+*.ov4 binary
+*.ov5 binary
+*.ov6 binary
+*.ovl binary
+*.OVL binary
+*.irl binary
+*.IRL binary

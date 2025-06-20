@@ -1,0 +1,52 @@
+Compiling CP/M 3
+================
+
+  This repository is all that is necessary to build the CP/M 3
+binary distribution under Linux/Unix/macOS.
+
+  The Makefile has been written for GNU Make. You will need:
+
+* The PL/M development system and the Intel PL/I-80 V1.4 compiler
+  from the Unofficial CP/M Website
+	<http://www.cpm.z80.de/binary.html>
+* The ZXCC emulator (version 0.3 or later) installed.  Grab the
+  updated version based on John Elliott's ZXCC v0.5.7 from
+	<https://github.com/agn453/ZXCC>
+* The thames emulator (version 0.1.0 or later) installed
+	<http://www.seasip.info/Unix/Thames/>
+
+  The PL/M system contains the PLM80 compiler, the ASM80 assembler, and the 
+ISIS emulator. Unpack these to separate directories.
+
+  The Intel PL/I-80 V1.4 contains CP/M binary PLI.COM and overlays PLI?.OVL
+that you should extract to the ZXCC BINDIR80 directory (by default this is
+/usr/local/lib/cpm/bin80) and the PL/I library PLILIB.IRL to the ZXCC LIBDIR80
+(into /usr/local/lib/cpm/lib80).  These should have lowercase filenames so that
+zxcc can find them.
+
+  Edit the shell script run_thames to set the four directories:
+
+ISIS_F0  source code directory
+ISIS_F1  PLM80 compiler
+ISIS_F2  ASM80 assembler
+ISIS_F3  ISIS emulator and libraries
+
+  'make all' will then set the build in motion. Since the build tools do not
+return error codes, you will have to watch for error messages yourself,
+and stop the build if you see one.
+
+  When GENCOM is being run, you may see a "corrupt FCB" message. This is
+caused by GENCOM closing a file it didn't open, and you may safely ignore it.
+
+  The build date is stored in five files:
+
+MCD80A.ASM
+MCD80D.ASM
+MCD80F.ASM
+MAKEDATE.LIB
+SHOW.PLM
+
+and you should change all of these if you are making a new release.
+
+Pre-built binaries are in the cpm-dist/ folder.
+
