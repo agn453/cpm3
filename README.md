@@ -9,7 +9,7 @@ prior work of John Elliott who incorporated patches and developed the
 build procedures - see https://www.seasip.info/Cpm/software/dri.html
 
 Previously, the license terms restricted distribution from the
-"Unofficial CP/M Web Site" at http://www.cpm.z80.de/ - but this is
+"Unofficial CP/M Web Site" at http://www.cpm.z80.de/ - but this
 no longer applies.  The revised licensing is
 [here](http://www.cpm.z80.de/license.html)
 and reproduced in the
