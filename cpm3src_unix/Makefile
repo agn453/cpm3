@@ -386,4 +386,4 @@ prs2mon.rel:    prs2mon.asm
 #
 clean:
 	rm -f $(MCOMS) $(HEXS) $(BLKS) *.lst *.rel *.sym *.tra *.rsx *.spr \
-	*.mod *.obj *.prn loader*.tmp help.hlp
+	*.mod *.obj *.prn loader*.tmp help.hlp helpext.hlp

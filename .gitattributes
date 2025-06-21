@@ -4,7 +4,7 @@ text=auto
 README text eol=crlf
 README.md text eol=crlf
 LICENSE text eol=crlf
-Makefile text eol=crlf
+Makefile text
 *.asm text eol=crlf linguist-language=Assembly
 *.ASM text eol=crlf linguist-language=Assembly
 fpal.lib binary
