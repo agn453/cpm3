@@ -1,5 +1,4 @@
-# cpm3
-Consolidated patched Source code, Unix build scripts and Binaries for CP/M 3
+# Consolidated patched Source code, Unix build scripts & Binaries for CP/M 3
 
 This repository collects the necessary files to build the distribution
 files for CP/M 3 (aka CP/M-Plus) under Linux/Unix/macOS.
