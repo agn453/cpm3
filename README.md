@@ -47,10 +47,12 @@ These should have lowercase filenames so that ZXCC can find them.
 
 Edit the shell script ```run_thames``` to set the four directories:
 
+```
 ISIS_F0  source code directory
 ISIS_F1  PLM80 compiler
 ISIS_F2  ASM80 assembler
 ISIS_F3  ISIS emulator and libraries
+```
 
 Doing a ```make all``` will then set the build in motion. Since the
 build tools do not return error codes, you will have to watch for error
