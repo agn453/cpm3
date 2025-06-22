@@ -12,13 +12,11 @@ Previously, the license terms restricted distribution from the
 "Unofficial CP/M Web Site" at http://www.cpm.z80.de/ - but this
 no longer applies.  The revised licensing is
 [here](http://www.cpm.z80.de/license.html)
-and reproduced in the
-[cpm3src_unix/LICENSE.html](https://raw.githubusercontent.com/agn453/cpm3/master/cpm3src_unix/LICENSE.html)
-file.
+.
 
 I have maintained my own copy of these files and incorporated the
 missing build procedure for the Intel PLI-80 source file for the
-```INITDIR.COM``` program, plus incorporated a random read fix to
+```INITDIR.COM``` program, plus added the random read fix to
 the BDOS ported from ZPM3.
 
 The ```Makefile``` has been written for GNU Make.
@@ -46,22 +44,21 @@ the ZXCC BINDIR80 directory (by default this is
 ```PLILIB.IRL``` to the ZXCC LIBDIR80 (into ```/usr/local/lib/cpm/lib80```).
 These should have lowercase filenames so that ZXCC can find them.
 
-Edit the shell script ```run_thames``` to set the four directories:
+The following steps will set a build in motion -
 
 ```
-ISIS_F0  source code directory
-ISIS_F1  PLM80 compiler
-ISIS_F2  ASM80 assembler
-ISIS_F3  ISIS emulator and libraries
+cd $HOME/src	# or where you keep your download source files
+git clone https://github.com/agn453/cpm3.git
+cd cpm3
+make all
 ```
 
-Doing a ```make all``` will then set the build in motion. Since the
-build tools do not return error codes, you will have to watch for error
-messages yourself, and stop the build if you see one.
+Since the build tools do not return error codes, you will have to
+watch for error messages yourself, and stop the build if you see one.
 
-When ```gencom.com``` is being run, you may see a "corrupt FCB" message.
-This is caused by GENCOM closing a file it didn't open, and you may
-safely ignore it.
+When either ```gencom.com``` or ```minhlp.com``` are being run, you may
+see a "corrupt FCB" message.  This is caused by them closing a file it
+didn't open, and you may safely ignore these messages.
 
 The build date is stored in five files:
 
