@@ -7,12 +7,8 @@ LICENSE text eol=crlf
 Makefile text
 *.asm text eol=crlf linguist-language=Assembly
 *.ASM text eol=crlf linguist-language=Assembly
-fpal.lib binary
-plm51.lib binary
-plm80.lib binary
-system.lib binary
-*.lib text eol=crlf linguist-language=Assembly
-*.LIB text eol=crlf linguist-language=Assembly
+*.lib binary
+*.LIB binary
 *.lit text eol=crlf
 *.dat text eol=crlf
 *.dcl text eol=crlf
