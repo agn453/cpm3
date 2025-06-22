@@ -30,8 +30,8 @@ You will need:
 updated version based on John Elliott's ZXCC v0.5.7 from
 https://github.com/agn453/ZXCC
 
-* The thames emulator (version 0.1.0 or later) installed
-http://www.seasip.info/Unix/Thames/
+* The Thames ISIS emulator for Unix (version 0.1.0 or later) installed
+http://www.seasip.info/Unix/Thames/ (I've included thames-0.1.1.tar.gz)
 
 The PL/M system contains the PLM80 compiler, the ASM80 assembler, and the 
 ISIS emulator. These have already been unpacked to separate directories
@@ -49,7 +49,10 @@ The following steps will set a build in motion -
 ```
 cd $HOME/src	# or where you keep your download source files
 git clone https://github.com/agn453/cpm3.git
-cd cpm3
+cd cpm3/cpm3src_unix
+## If you haven't already copied PL/I-80 for ZXCC to use
+# cp pli80-v1.4/pli.com pli80-v1.4/pli[0-2].ovl $BINDIR80/
+# cp pli80-v1.4/plilib.irl $LIBDIR80/
 make all
 ```
 
@@ -74,4 +77,6 @@ and you should change all of these if you are making a new release.
 
 Pre-built binaries are in the ```cpm3src_unix/cpm-dist/``` folder.
 
+--
 
+Tony Nicholson, Sunday 22-Jun-2025
