@@ -80,7 +80,7 @@ BINARIES= bdos3.spr	date.com	erase.com	help.hlp \
 	bioskrnl.asm	boot.asm	chario.asm	copysys.asm \
 	dirlbl.rsx	drvtbl.asm	dump.asm	echovers.asm \
 	fd1797sd.asm	help.dat	helpext.dat	minhlp.com \
-	move.asm	random.asm	scb.asm	xref.com \
+	move.asm	random.asm	scb.asm	modebext.lib	xref.com \
 	ports.lib	z80.lib	trace.utl	hist.utl README
 
 SOURCES= assemble.txt  disp.plm	    hexcom.asm	  parse.asm	search.plm \
@@ -103,7 +103,7 @@ SOURCES= assemble.txt  disp.plm	    hexcom.asm	  parse.asm	search.plm \
 	crdef.plm     get.plm	    minhlp.plm	  save.asm	vers.lit \
 	date.plm      getrsx.asm    mon.plm	  scan.lit	xfcb.lit \
 	datmod.asm    getrsx.lib    move.asm	  scan.plm \
-	device.plm    help.dat	    newpip.plm	  scb.asm \
+	device.plm    help.dat	    newpip.plm	  scb.asm	modebext.lib \
 	devext.plm    helpext.dat   CPM3FIX.PAT   LICENSE.html \
 	dirlbl.asm    help.plm	    $$opysys.asm   search.lit  runthames \
 	initdir.pli   mcd80d.asm    diomod.dcl    plibios.dcl \

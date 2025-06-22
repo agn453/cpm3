@@ -37,6 +37,7 @@ DISTFILES=" \
  link.com \
  mac.com \
  modebaud.lib \
+ modebext.lib \
  move.asm \
  patch.com \
  pip.com \
@@ -72,7 +73,7 @@ done
 /bin/echo " [Done]"
 /bin/echo ""
 rm agn-cpm3.lbr
-/bin/echo "Enter 59 when asked for number of slots below."
+/bin/echo "Enter 60 when asked for number of slots below."
 lu u agn-cpm3.lbr $DISTFILES
 #
 /bin/echo "A new agn-cpm3.lbr has been created."
