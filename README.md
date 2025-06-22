@@ -57,7 +57,7 @@ Since the build tools do not return error codes, you will have to
 watch for error messages yourself, and stop the build if you see one.
 
 When either ```gencom.com``` or ```minhlp.com``` are being run, you may
-see a "corrupt FCB" message.  This is caused by them closing a file it
+see a "corrupt FCB" message.  This is caused by them closing a file they
 didn't open, and you may safely ignore these messages.
 
 The build date is stored in five files:
