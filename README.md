@@ -36,11 +36,13 @@ https://github.com/agn453/ZXCC
 http://www.seasip.info/Unix/Thames/
 
 The PL/M system contains the PLM80 compiler, the ASM80 assembler, and the 
-ISIS emulator. Unpack these to separate directories.
+ISIS emulator. These have already been unpacked to separate directories
+```plm80```, ```asm80``` and ```utils```.
 
-The Intel PL/I-80 V1.4 contains CP/M binary ```PLI.COM``` and overlays
-```PLI?.OVL``` that you should extract to the ZXCC BINDIR80 directory
-(by default this is ```/usr/local/lib/cpm/bin80```) and the PL/I library
+The Intel PL/I-80 V1.4 directory ```pli80-v1.4``` contains the CP/M
+binary ```PLI.COM``` and overlays ```PLI?.OVL``` that you should copy to
+the ZXCC BINDIR80 directory (by default this is
+```/usr/local/lib/cpm/bin80```) and the PL/I library
 ```PLILIB.IRL``` to the ZXCC LIBDIR80 (into ```/usr/local/lib/cpm/lib80```).
 These should have lowercase filenames so that ZXCC can find them.
 
